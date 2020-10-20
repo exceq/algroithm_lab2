@@ -1,0 +1,13 @@
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.csprojAssemblyReference.cache
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.AssemblyInfoInputs.cache
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.AssemblyInfo.cs
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.csproj.CoreCompileInputs.cache
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.exe
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.deps.json
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.runtimeconfig.json
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.runtimeconfig.dev.json
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.dll
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\bin\Debug\netcoreapp3.1\algroithm_lab2.pdb
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.dll
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.pdb
+F:\Desktop\Popka\Visual Studio\algroithm_lab2\algroithm_lab2\obj\Debug\netcoreapp3.1\algroithm_lab2.genruntimeconfig.cache
