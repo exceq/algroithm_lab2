@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace algroithm_lab2
 {
@@ -52,27 +53,30 @@ namespace algroithm_lab2
             return word;
         }
 
-        public static void CreateNewExpr(string path)
+        public static void CreateNewExpr(string path, int count)
         {
-            var exp = "";
+            var exp = new StringBuilder();
             var r = 0;
-            for (int i = 0; i < 3; i++)
-            {
+            for (int i = 0; i < count; i++)
+            {               
                 if (rnd.Next(2) == 0)
                 {
                     if (i != 0)
-                        exp += operations[rnd.Next(0, 5)] + " ";
+                    {
+                        exp.Append(operations[rnd.Next(0, 5)] + " ");
+                        i++;
+                    }
                     r = rnd.Next(6, 9);
-                    exp += operations[r] + " ( " + rnd.Next(1, 100) + " ) ";
+                    exp.Append(operations[r] + " ( " + rnd.Next(1, 100) + " ) ");
                 }
                 else
                 {
                     r = rnd.Next(0, 5);
-                    exp += (i == 0 ? rnd.Next(1, 100).ToString() + " " : "") + operations[r] + " " + (r == 5 ? rnd.Next(1, 6) : rnd.Next(1, 100)) + " ";
+                    exp.Append((i == 0 ? rnd.Next(1, 100).ToString() + " " : "") + operations[r] + " " + (r == 5 ? rnd.Next(1, 6) : rnd.Next(1, 100)) + " ");
                 }
             }
             Console.WriteLine(exp);
-            File.WriteAllText(path, exp);
+            File.WriteAllText(path, exp.ToString());
         }
 
         static string[] operations = new string[] { "+", "-", "*", "/", "^", "ln", "sqrt", "sin", "cos", };

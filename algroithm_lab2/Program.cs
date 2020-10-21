@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 
 namespace algroithm_lab2
 {
@@ -9,26 +10,12 @@ namespace algroithm_lab2
         static Stopwatch sw = new Stopwatch();
         static void Main(string[] args)
         {
-            var path4 = "task4.txt";
-            Generator.CreateNewExpr(path4);
-            var a = Postfix.Translate(File.ReadAllText(path4));
-            Console.WriteLine(a);
-            var b = Postfix.Calculate(a);
-            Console.WriteLine(b);
-
-
-
-
-
-
-
-            return;
-            for (int i = 1; i < 130; i *= 2)
+            var path5 = "task4.txt";
+            File.WriteAllText("task4.csv", "operations;ms\n");
+            for (int i = 1; i < 10000000; i *= 2)
             {
-                var ms = 0L;
-                Generator.CreateNewExpr(path4);
-                for (int j = 0; j < i; j++)
-                    ms += Measure4(Postfix.Translate, Postfix.Calculate, path4);
+                Generator.CreateNewExpr(path5, i);
+                var ms = Measure4(Postfix.Translate, Postfix.Calculate, path5);
                 File.AppendAllText("task4.csv", i + ";" + ms + "\n");
             }
 
